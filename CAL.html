@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <div class="form">
+    <h2 style="color: white;margin-top: 20px;margin-left: 150px;margin-top: 50px;">calculator</h2>
+    <input id="value1" type="number" placeholder="Number1" ><br>
+    <input id="value2" type="number" placeholder="Number2"><br>
+    <button type="button" onclick="Add()" style="margin-left: 70px;">+</button>
+    <button type="button" onclick="sub()">-</button>
+    <button type="button" onclick="mul()">x</button>
+    <button type="button" onclick="div()">/</button>
+    <button type="button" onclick="mod()">%</button>
+    <h1 id="answer" style="text-align: center;color: white;"></h1>
+    </div>
+    <style>
+        .form{
+            height: 300px;
+            width: 400px;
+            background-color: black;
+            margin-left: 600px;
+            margin-top: 100px;
+        }
+        #value1{
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+        #value2{
+            margin-top: 25px;
+            margin-left: 120px;
+        }
+        button{
+            
+            margin-top: 20px;
+            width: 50px;
+        }
+    </style>
+    
+    <script>
+        function Add(){
+            let inputValue1=document.getElementById("value1").valueAsNumber
+            let inputValue2=document.getElementById("value2").valueAsNumber
+
+            let final_answer=inputValue1+inputValue2
+            document.getElementById("answer").innerHTML=final_answer
+          
+          }
+        function sub(){
+            let inputValue1=document.getElementById("value1").valueAsNumber
+            let inputValue2=document.getElementById("value2").valueAsNumber
+
+            let final_answer=inputValue1-inputValue2
+            document.getElementById("answer").innerHTML=final_answer
+           
+
+        }
+        function mul(){
+            let inputValue1=document.getElementById("value1").valueAsNumber
+            let inputValue2=document.getElementById("value2").valueAsNumber
+
+            let final_answer=inputValue1*inputValue2
+            document.getElementById("answer").innerHTML=final_answer
+           
+
+        }
+        function div(){
+            let inputValue1=document.getElementById("value1").valueAsNumber
+            let inputValue2=document.getElementById("value2").valueAsNumber
+
+            let final_answer=inputValue1/inputValue2
+            document.getElementById("answer").innerHTML=final_answer
+           
+
+        }
+        function mod(){
+            let inputValue1=document.getElementById("value1").valueAsNumber
+            let inputValue2=document.getElementById("value2").valueAsNumber
+
+            let final_answer=inputValue1%inputValue2
+            document.getElementById("answer").innerHTML=final_answer
+           
+
+        }
+        
+
+        
+    </script>
+
+</body>
+</html>
